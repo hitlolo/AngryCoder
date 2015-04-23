@@ -24,6 +24,18 @@ void MenuBackground::initBackGroundFromTMX()
 	this->initItems(items);
 
 	this->addChild(m_tmxMap);
+
+	
+	Node *rootNode = CSLoader::createNode("Node.csb");//传入Studio2.x的资源路径 
+	//m_tmxMap->addChild(rootNode,2);//假设this是即将显示的scene 
+	auto sp = Sprite::create();
+	sp->addChild(rootNode);
+	//加载动画： 
+	ActionTimeline *action = CSLoader::createTimeline("Node.csb");
+	rootNode->runAction(action);
+	//sp->runAction(action);
+	action->gotoFrameAndPlay(0, 20, true);
+	m_tmxMap->addChild(sp, 2);
 }
 
 void MenuBackground::initFloor(TMXObjectGroup* floors)

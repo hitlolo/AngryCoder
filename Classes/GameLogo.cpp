@@ -42,26 +42,34 @@ void GameLogo::showLogoAndLoad()
 
 void  GameLogo::loadRes()
 {
-	this->loadPng();
+	this->loadItemPng();
+	this->loadHeroPng();
 //	this->loadMusicAndEffects();
 	this->overLoading();
 }
 
 
 
-void  GameLogo::loadPng()
+void  GameLogo::loadItemPng()
 {
-	Director::getInstance()->getTextureCache()->addImageAsync("spritesheet.png", CC_CALLBACK_1(GameLogo::loadSpriteFramesAfterPNGOver, this));
+	Director::getInstance()->getTextureCache()->addImageAsync("spritesheet.png", CC_CALLBACK_1(GameLogo::loadItemFramesAfterPNGOver, this));
+}
+
+void GameLogo::loadHeroPng()
+{
+	Director::getInstance()->getTextureCache()->addImageAsync("herosheet.png", CC_CALLBACK_1(GameLogo::loadHeroFramesAfterPNGOver, this));
 }
 
 
-void GameLogo::loadSpriteFramesAfterPNGOver(Texture2D* texture)
+void GameLogo::loadItemFramesAfterPNGOver(Texture2D* texture)
 {
-
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("spritesheet.plist", texture);
-
 }
 
+void GameLogo::loadHeroFramesAfterPNGOver(Texture2D* texture)
+{
+	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("herosheet.plist", texture);
+}
 //void GameLogo::loadMusicAndEffects()
 //{
 //	//	GameSound::getInstance()->preLoad();

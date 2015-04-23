@@ -17,8 +17,10 @@ private:
 	void startLoading();
 	void showLogoAndLoad();
 	void loadRes();
-	void loadPng();
-	void loadSpriteFramesAfterPNGOver(Texture2D* texture);
+	void loadItemPng();
+	void loadHeroPng();
+	void loadItemFramesAfterPNGOver(Texture2D* texture);
+	void loadHeroFramesAfterPNGOver(Texture2D* texture);
 	void overLoading();
 
 	//GameController goto menu state

@@ -3,7 +3,10 @@
 
 #include "cocos2d.h"
 #include "GameData.h"
+#include "ui/CocosGUI.h"//UI相关的头文件 
+#include"cocostudio/CocoStudio.h"//
 USING_NS_CC;
+using namespace cocostudio::timeline;
 
 
 class MenuBackground :public Layer
