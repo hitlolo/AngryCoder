@@ -22,26 +22,34 @@ void AppDelegate::initGLContextAttrs()
     GLView::setGLContextAttrs(glContextAttrs);
 }
 
+// If you want to use packages manager to install more packages, 
+// don't modify or remove this function
+static int register_all_packages()
+{
+    return 0; //flag for packages manager
+}
+
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
+	this->setResouseSearchPath();
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLViewImpl::create("My Game");
+		glview->setFrameSize(1024, 576);
         director->setOpenGLView(glview);
     }
 
     // turn on display FPS
-    director->setDisplayStats(true);
+    director->setDisplayStats(false);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+	glview->setDesignResolutionSize(1024, 576, ResolutionPolicy::SHOW_ALL);
+    register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
+	GameController::getInstance()->goState(GAME_STATE::LOGO);
 
     return true;
 }
@@ -60,4 +68,17 @@ void AppDelegate::applicationWillEnterForeground() {
 
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
+}
+
+
+void AppDelegate::setResouseSearchPath()
+{
+	std::vector<std::string> paths;
+	paths.push_back("fonts");
+	paths.push_back("images");
+	paths.push_back("sounds");
+	paths.push_back("ui");
+	paths.push_back("res");
+	paths.push_back("floors");
+	FileUtils::getInstance()->setSearchPaths(paths);
 }

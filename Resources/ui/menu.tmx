@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="floor" tilewidth="1024" tileheight="192">
+  <tile id="0">
+   <image width="1024" height="192" source="D:/sogou_download/Office_Pack_full/OGA/Background/floor.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="items" tilewidth="180" tileheight="184">
+  <tile id="0">
+   <image width="100" height="148" source="D:/sogou_download/Office_Pack_full/OGA/Background/autoseller.png"/>
+  </tile>
+  <tile id="1">
+   <image width="116" height="80" source="D:/sogou_download/Office_Pack_full/OGA/Background/blackboard.png"/>
+  </tile>
+  <tile id="2">
+   <image width="104" height="148" source="D:/sogou_download/Office_Pack_full/OGA/Background/bookcase.png"/>
+  </tile>
+  <tile id="3">
+   <image width="56" height="104" source="D:/sogou_download/Office_Pack_full/OGA/Background/chair.png"/>
+  </tile>
+  <tile id="4">
+   <image width="116" height="80" source="D:/sogou_download/Office_Pack_full/OGA/Background/companylogo.png"/>
+  </tile>
+  <tile id="5">
+   <image width="104" height="168" source="D:/sogou_download/Office_Pack_full/OGA/Background/doorclosed.png"/>
+  </tile>
+  <tile id="6">
+   <image width="104" height="168" source="D:/sogou_download/Office_Pack_full/OGA/Background/dooropen.png"/>
+  </tile>
+  <tile id="7">
+   <image width="64" height="88" source="D:/sogou_download/Office_Pack_full/OGA/Background/drawer.png"/>
+  </tile>
+  <tile id="8">
+   <image width="180" height="168" source="D:/sogou_download/Office_Pack_full/OGA/Background/elevator.png"/>
+  </tile>
+  <tile id="9">
+   <image width="28" height="72" source="D:/sogou_download/Office_Pack_full/OGA/Background/extinguisher.png"/>
+  </tile>
+  <tile id="10">
+   <image width="68" height="88" source="D:/sogou_download/Office_Pack_full/OGA/Background/hanger.png"/>
+  </tile>
+  <tile id="11">
+   <image width="56" height="136" source="D:/sogou_download/Office_Pack_full/OGA/Background/lamp.png"/>
+  </tile>
+  <tile id="12">
+   <image width="128" height="172" source="D:/sogou_download/Office_Pack_full/OGA/Background/lighting.png"/>
+  </tile>
+  <tile id="13">
+   <image width="116" height="68" source="D:/sogou_download/Office_Pack_full/OGA/Background/newsboard.png"/>
+  </tile>
+  <tile id="14">
+   <image width="88" height="184" source="D:/sogou_download/Office_Pack_full/OGA/Background/newswall.png"/>
+  </tile>
+  <tile id="15">
+   <image width="176" height="120" source="D:/sogou_download/Office_Pack_full/OGA/Background/officeDesk.png"/>
+  </tile>
+  <tile id="16">
+   <image width="64" height="116" source="D:/sogou_download/Office_Pack_full/OGA/Background/potplant.png"/>
+  </tile>
+  <tile id="17">
+   <image width="92" height="52" source="D:/sogou_download/Office_Pack_full/OGA/Background/safebox.png"/>
+  </tile>
+  <tile id="18">
+   <image width="56" height="160" source="D:/sogou_download/Office_Pack_full/OGA/Background/swordbox.png"/>
+  </tile>
+  <tile id="19">
+   <image width="56" height="160" source="D:/sogou_download/Office_Pack_full/OGA/Background/swordbox_empty.png"/>
+  </tile>
+  <tile id="20">
+   <image width="56" height="48" source="D:/sogou_download/Office_Pack_full/OGA/Background/trashcan.png"/>
+  </tile>
+  <tile id="21">
+   <image width="40" height="112" source="D:/sogou_download/Office_Pack_full/OGA/Background/watermachine.png"/>
+  </tile>
+  <tile id="22">
+   <image width="128" height="136" source="D:/sogou_download/Office_Pack_full/OGA/Background/window.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Floors">
+  <object name="floor_1" type="background" gid="1" x="0" y="576">
+   <properties>
+    <property name="png" value="res/gui/floor.png"/>
+    <property name="zOrder" value="0"/>
+   </properties>
+  </object>
+  <object name="floor_2" type="background" gid="1" x="0" y="384">
+   <properties>
+    <property name="png" value="res/gui/floor.png"/>
+    <property name="zOrder" value="0"/>
+   </properties>
+  </object>
+  <object name="floor_3" type="background" gid="1" x="0" y="192">
+   <properties>
+    <property name="png" value="res/gui/floor.png"/>
+    <property name="zOrder" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Items">
+  <object name="coffee" type="item" gid="2" x="353" y="566">
+   <properties>
+    <property name="png" value="res/items/coffee.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="logo" gid="6" x="33" y="497">
+   <properties>
+    <property name="png" value="res/items/companylogo.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="lighting" gid="14" x="192" y="564">
+   <properties>
+    <property name="png" value="res/items/lighting.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="window" gid="24" x="834" y="348">
+   <properties>
+    <property name="png" value="res/items/window.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="plant" gid="18" x="704" y="371">
+   <properties>
+    <property name="png" value="res/items/plant.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="newswall" gid="16" x="99" y="191">
+   <properties>
+    <property name="png" value="res/items/newswall.png"/>
+    <property name="zOrder" value="100"/>
+   </properties>
+  </object>
+  <object name="desk" gid="17" x="513" y="178">
+   <properties>
+    <property name="png" value="res/items/officedesk.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+  <object name="trashcan" gid="22" x="570" y="375">
+   <properties>
+    <property name="png" value="res/items/trashcan.png"/>
+    <property name="zOrder" value="100"/>
+   </properties>
+  </object>
+  <object name="hanger" gid="12" x="785" y="133">
+   <properties>
+    <property name="png" value="res/items/hanger.png"/>
+    <property name="zOrder" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

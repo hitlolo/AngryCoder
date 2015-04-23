@@ -10,16 +10,40 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="classes">
+      <UniqueIdentifier>{b31e9b95-b772-40b4-b8b1-8e231294bf47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="classes\Controller">
+      <UniqueIdentifier>{126139b7-22d0-4f5b-a621-87df953c79f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="classes\Logo">
+      <UniqueIdentifier>{550da01d-6d54-4ad9-b740-73bb9cd550f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="classes\Menu">
+      <UniqueIdentifier>{b8297bbb-1f39-401b-b712-4db1774cc58d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>src</Filter>
+      <Filter>classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameController.cpp">
+      <Filter>classes\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLogo.cpp">
+      <Filter>classes\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameMenu.cpp">
+      <Filter>classes\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuBackground.cpp">
+      <Filter>classes\Menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -27,10 +51,25 @@
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
+      <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>src</Filter>
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameController.h">
+      <Filter>classes\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameData.h">
+      <Filter>classes\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLogo.h">
+      <Filter>classes\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMenu.h">
+      <Filter>classes\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuBackground.h">
+      <Filter>classes\Menu</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
